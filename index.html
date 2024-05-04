@@ -1,0 +1,77 @@
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Text Editor - [CT/2019/043]</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Text Editor</h1>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col" id="format">
+                <div class="first box">
+                    <button type="button" id="boldButton" onclick="bold(this)">
+                        <img src="Resources/bold-xxl.png" alt="Bold Icon">
+                    </button>
+                    <button type="button" id="underlineButton" onclick="underline(this)">
+                        <img src="Resources/underline.png" alt="Underline Icon">
+                    </button>
+                    <button type="button" id="italicButton" onclick="italic(this)">
+                        <img src="Resources/italic-xxl.png" alt="Italic Icon">
+                    </button>
+                    <button type="button" id="fontColorButton" onclick="openColorPicker()">
+                        <img src="Resources/fontColor.png" alt="Font-color">
+                    </button>
+                    <input type="color" id="colorPicker">
+                </div>
+                <div class="second box">
+                    <button type="button" id="alignleftButton" onclick="left(this)">
+                        <img src="Resources/left.png" alt="Align left Icon">
+                    </button>
+                    <button type="button" id="aligncenterButton" onclick="center(this)">
+                        <img src="Resources/center.png" alt="Align center Icon">
+                    </button>
+                    <button type="button" id="alignrightButton" onclick="right(this)">
+                        <img src="Resources/right.png" alt="Align right Icon">
+                    </button>
+                    <button type="button" id="justifyButton" onclick="justify(this)">
+                        <img src="Resources/justify.png" alt="Justify Icon">
+                    </button>
+                </div>
+                <div class="third box">
+                    <button type="button" id="undoButton" onclick="undo(this)">
+                        <img src="Resources/undo.png" alt="Undo Icon">
+                    </button>
+                    <button type="button" id="redoButton" onclick="redo(this)">
+                        <img src="Resources/redo.png" alt="Redo Icon">
+                    </button>
+                </div>
+            </div>
+            <br>
+            <div class="col" id="content" contenteditable="true" spellcheck="false">     <!--Create content editable area-->
+                <div class="placeholder">Start typing here...</div>
+            </div>
+        </div>
+        
+    </div>
+        
+
+    <br>          
+    <footer>
+        <p>&copy Text Editor By J.M.H.Kithmini 2023</p>
+    </footer>
+    <script src="script.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+<!-- Author: [J.M.H.Kithmini] | [CT/2019/043] -->
+</html>

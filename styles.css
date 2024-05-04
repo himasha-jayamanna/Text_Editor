@@ -1,0 +1,172 @@
+body{
+    background-color: #edecd9;
+    height: 100%;
+    width: 100%;
+    padding: 5px;
+    
+}
+
+
+h1{
+    background-color:#1f5f89;
+    text-align: center;
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+hr{
+   
+   border-color:darkgrey; 
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+}
+
+
+
+.col{
+    background-color: rgb(203, 212, 214);
+    width: 100%;
+    max-width: 900px;
+    border-radius: 4px;
+    box-shadow: #1f5f89 0px 5px 15px;
+    padding: 5px;
+    margin: 2px auto;
+}
+
+
+.box{
+    display: inline-block !important;   
+    justify-content: center;
+    
+}
+
+.first.box{
+    margin-left: 175px;
+}
+  
+button{
+    border: none;
+    color: rgb(203, 203, 214);
+    font-size: 20px;
+    background:transparent;
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    user-select: none;
+    width: 50px;
+    height: 40px;
+
+}
+
+#boldButton img{
+    width: 100%;
+    height: 100%;
+    }
+
+#underlineButton img{
+    width:22px;
+    height: 25px;
+    }
+
+#italicButton img{
+    width: 100%;
+    height: 100%;
+    }
+
+#fontColorButton img{
+    width: 22px;
+    height:22px ;
+}
+
+#colorPicker{
+    display:none;
+
+}
+
+button:hover{
+    background: grey;
+}
+
+button:focus{
+    background: #1f5f89;
+    color:grey;
+}
+
+#alignleftButton img,#aligncenterButton img,#alignrightButton img, #justifyButton img{
+    width: 100%;
+    height: 100%;
+}
+
+#undoButton img,#redoButton img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#content{
+    width: 875px;
+    height: 400px;
+    padding: 30px;
+    resize: vertical;
+    border: none;
+    outline: none;
+    background-color: rgb(203, 212, 214);
+    font-size: 18px;
+    
+   
+
+}
+
+.placeholder {
+    position: absolute;
+    pointer-events: none;
+    color: gray;
+    padding: 10px;
+}
+
+#content:focus .placeholder {
+    display: none;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color:#1f5f89;
+    color: #fff;
+  }
+
+@media screen and (max-width: 900px) {
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        flex-direction: column;
+    }
+    .col{
+        background-color: rgb(203, 212, 214); 
+        max-width: 600px;
+        border-radius: 4px;
+        box-shadow: #1f5f89 0px 5px 15px;
+        padding: 5px;
+        
+       
+    }
+    
+    .box{
+        display: inline-block !important;
+    
+        
+    }
+
+    .first.box{
+        margin-left:30px;
+    }
+    
+}
